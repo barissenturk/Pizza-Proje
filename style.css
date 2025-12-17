@@ -378,12 +378,19 @@ footer {
   align-items: center;
   width: 100%;
   background-color: #1a1a1a;
-  height: 561px;
 }
 
 .footer-container {
   display: flex;
+  flex-direction: column;
   min-height: 390px;
+
+  width: 100%;
+}
+
+.footer-info-container {
+  display: flex;
+  justify-content: center;
   margin: 53px 0 24px 0;
 }
 
@@ -414,6 +421,10 @@ footer {
   padding: 0;
   margin: 0;
   width: 306px;
+}
+
+.info-list-item:first-child {
+  max-width: 240px;
 }
 
 .info-list-item {
@@ -576,5 +587,39 @@ footer {
     width: 80%;
     justify-content: space-between;
     height: 69px;
+  }
+
+  footer {
+    height: auto;
+  }
+  .footer-container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-info-container {
+    flex-direction: column;
+    width: 80%;
+    margin: 0;
+  }
+  .footer-left {
+    margin: 80px 0;
+  }
+
+  .footer-middle {
+    margin: 0;
+  }
+
+  .instagram-header {
+    margin: 42px 0 40px 0;
+  }
+  .footer-right {
+    margin-bottom: 80px;
+  }
+
+  .footer-info-header {
+    margin: 0 105px 30px 0;
+  }
+  .info-list-item {
+    margin-bottom: 22px;
   }
 }
